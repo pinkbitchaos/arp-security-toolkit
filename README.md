@@ -1,6 +1,6 @@
 # ARP Security Toolkit
 
-## Overview
+## Description
 
 ARP Security Toolkit is a Python-based cybersecurity project designed to demonstrate how ARP (Address Resolution Protocol) works, how ARP spoofing attacks can affect local networks, and how suspicious ARP behavior can be detected using defensive monitoring techniques.
 
@@ -24,7 +24,6 @@ This project was built for educational and ethical cybersecurity learning purpos
 * Python
 * Scapy
 * Npcap
-* Git & GitHub
 
 ---
 
@@ -105,37 +104,6 @@ IP: 192.168.1.1
 OLD MAC: AA:BB:CC:11:22:33
 NEW MAC: FF:EE:DD:44:55:66
 ```
-
----
-
-## Screenshots
-
-Add your screenshots inside the `screenshots` folder.
-
-Example:
-
-* scanner.png
-* sniffer.png
-* detector.png
-
----
-
-## Educational Purpose Disclaimer
-
-This project was developed strictly for educational and defensive cybersecurity purposes in controlled environments.
-
-Do not use these techniques on networks or devices without proper authorization.
-
----
-
-## Future Improvements
-
-* GUI Dashboard
-* CSV Export Support
-* Device Vendor Detection
-* Automatic Network Detection
-* Real-Time Alert Notifications
-* Interface Selection
 
 ---
 
