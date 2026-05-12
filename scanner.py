@@ -1,6 +1,7 @@
 from scapy.all import ARP, Ether, srp
 
-target_ip = "192.168.229.1/24"
+#change this to match your local network 
+target_ip = "192.168.1.0/24"
 
 print("\nScanning network...\n")
 
@@ -10,18 +11,15 @@ ether = Ether(dst="ff:ff:ff:ff:ff:ff")
 
 packet = ether / arp
 
-result = srp(packet, timeout=5, verbose=0)[0]
+result = srp(packet, timeout=5, verbose=False)[0]
 
-print("IP ADDRESS\t\tMAC ADDRESS")
-print("-" * 50)
+if result:
 
-found = False
+    print("IP ADDRESS\t\tMAC ADDRESS")
+    print("-" * 50)
 
-for sent, received in result:
+    for sent, received in result:
+        print(f"{received.psrc}\t\t{received.hwsrc}")
 
-    found = True
-
-    print(f"{received.psrc}\t\t{received.hwsrc}")
-
-if not found:
-    print("\nNo devices found.")
+else:
+    print("No devices found.")
