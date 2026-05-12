@@ -12,4 +12,4 @@ def process_packet(packet):
         elif packet[ARP].op == 2:
             print(f"[REPLY] {packet[ARP].psrc} is at {packet[ARP].hwsrc}")
 
-sniff(filter="arp", prn=process_packet, store=False)
+sniff(filter="arp", prn=process_packet, store=False) 

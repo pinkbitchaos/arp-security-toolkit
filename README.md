@@ -76,7 +76,7 @@ During installation enable:
 
 ## Usage
 
-### Run Network Scanner
+### Run Network Scanner 
 
 ```bash
 python scanner.py

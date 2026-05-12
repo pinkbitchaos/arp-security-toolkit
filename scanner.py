@@ -11,7 +11,7 @@ ether = Ether(dst="ff:ff:ff:ff:ff:ff")
 
 packet = ether / arp
 
-result = srp(packet, timeout=5, verbose=False)[0]
+result = srp(packet, timeout=5, verbose=False)[0] 
 
 if result:
 

@@ -1,3 +1,3 @@
 scapy
 colorama
-mac-vendor-lookup
+mac-vendor-lookup 

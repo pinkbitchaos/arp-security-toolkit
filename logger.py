@@ -9,4 +9,4 @@ def log_alert(message):
     print(log_message)
 
     with open("alerts.txt", "a") as file:
-        file.write(log_message + "\n")
+        file.write(log_message + "\n") 

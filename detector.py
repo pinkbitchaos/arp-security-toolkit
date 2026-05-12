@@ -26,4 +26,4 @@ def detect_spoof(packet):
         else:
             known_devices[ip] = mac
 
-sniff(filter="arp", prn=detect_spoof, store=False)
+sniff(filter="arp", prn=detect_spoof, store=False) 
